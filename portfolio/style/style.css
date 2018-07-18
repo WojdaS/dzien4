@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+p {
+    font-size: 15px;
+}
+
+span {
+    color: #1ac056;
+    font-weight: 400;
+}
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    /*    right: 0;*/
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+}
+
+#main-nav > ul {
+    text-align: right;
+    margin: 0;
+}
+
+#main-nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    padding: 15px 20px;
+}
+
+#main-nav > ul > li > a {
+    text-decoration-line: none;
+    color: #1ac056;
+}
+
+#main-nav > ul > li > a:hover {
+    color: #291f1a;
+}
+
+header#img-header {
+    height: 100vh;
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header#img-header > div.content {
+    left: 0;
+    right: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+
+}
+
+section#about > div.about-container {
+    width: 100%;
+    height: 50vh;
+    font-size: 0;
+}
+
+section#about > div.about-container > article.about-content {
+    width: 50%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: text-top;
+
+}
+
+section#about > div.about-container > article.about-content > figure {
+    padding: 0;
+    margin: 0;
+    height: 50vh;
+}
+
+section#about > div.about-container > article.about-content > figure > img {
+    height: 100%;
+    position: relative;
+    left: 50vh;
+}
+
+section#about > div.about-container > article.about-content > p {
+    /*    top: 0px;*/
+    margin: 0;
+    padding-right: 50px;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+section#skills > div.skills-container {
+    width: 100%;
+    height: 25vh;
+    font-size: 0;
+    text-align: center;
+}
+
+
+section#skills > div.skills-container > article.skills-content > i.fab {
+    font-size: 80px;
+    display: inline-block;
+    margin: 0 5%;
+}
+
+section#portfolio > div.portfolio-container {
+    font-size: 0;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div#portfolio-img1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div#portfolio-img2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div#portfolio-img3 {
+    background-image: url("../img/portfolio3.jpg");
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content {
+    margin: 0 80px;
+    text-align: center;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.3%;
+    height: 300px;
+    position: relative;
+    display: inline-block;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p {
+    height: 100%;
+    background-color: rgba(77,
+    25,
+    45,
+    0.5);
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease-out;
+    color: white;
+    text-align: center;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p:hover {
+    opacity: 1;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p > div.border {
+    border: 1px solid white;
+    height: 80%;
+    width: 80%;
+    margin: 5% 10%;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p > div.border > p {
+    margin: 10px 20px;
+}
+
+section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p > div.border > i.fas {
+    font-size: 30px;
+    color: darkgreen;
+}
