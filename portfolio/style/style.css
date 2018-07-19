@@ -86,6 +86,10 @@ header#img-header > div.content {
 
 }
 
+section#about {
+    background-color: #f9fcfe;
+}
+
 section#about > div.about-container {
     width: 100%;
     height: 50vh;
@@ -104,20 +108,22 @@ section#about > div.about-container > article.about-content > figure {
     padding: 0;
     margin: 0;
     height: 50vh;
+    text-align: center;
 }
 
 section#about > div.about-container > article.about-content > figure > img {
     height: 100%;
-    position: relative;
-    left: 50vh;
 }
 
 section#about > div.about-container > article.about-content > p {
-    /*    top: 0px;*/
     margin: 0;
     padding-right: 50px;
     border: 1px solid #fff;
     width: 100%;
+}
+
+section#skills {
+    background-color: #f9fcfe;
 }
 
 section#skills > div.skills-container {
@@ -134,65 +140,114 @@ section#skills > div.skills-container > article.skills-content > i.fab {
     margin: 0 5%;
 }
 
+section#portfolio {
+    background-color: #f9fcfe;
+    height: 500px;
+}
+
 section#portfolio > div.portfolio-container {
     font-size: 0;
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div#portfolio-img1 {
+section#portfolio > div.portfolio-container > div#portfolio-img1 {
     background-image: url("../img/portfolio1.jpg");
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div#portfolio-img2 {
+section#portfolio > div.portfolio-container > div#portfolio-img2 {
     background-image: url("../img/portfolio2.jpg");
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div#portfolio-img3 {
+section#portfolio > div.portfolio-container > div#portfolio-img3 {
     background-image: url("../img/portfolio3.jpg");
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content {
-    margin: 0 80px;
+section#portfolio > div.portfolio-container {
+    padding: 0 80px;
     text-align: center;
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img {
+section#portfolio > div.portfolio-container > div.portfolio-img {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 33.3%;
     height: 300px;
     position: relative;
     display: inline-block;
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p {
+section#portfolio > div.portfolio-container > div.portfolio-img > div.portfolio-p {
     height: 100%;
-    background-color: rgba(77,
-    25,
-    45,
-    0.5);
+    background-color: rgba(0, 0,
+    0,
+    0.8);
     opacity: 0;
     position: absolute;
     transition: all 0.5s ease-out;
     color: white;
     text-align: center;
+    padding: 10px;
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p:hover {
+section#portfolio > div.portfolio-container > div.portfolio-img > div.portfolio-p:hover {
     opacity: 1;
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p > div.border {
+section#portfolio > div.portfolio-container > div.portfolio-img > div.portfolio-p > div.border {
     border: 1px solid white;
-    height: 80%;
-    width: 80%;
-    margin: 5% 10%;
+    height: 100%;
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p > div.border > p {
-    margin: 10px 20px;
+section#portfolio > div.portfolio-container > div.portfolio-img > div.portfolio-p > div.border > p {
+    /*    margin: 10px 20px;*/
 }
 
-section#portfolio > div.portfolio-container > article.portfolio-content > div.portfolio-img > div.portfolio-p > div.border > i.fas {
+section#portfolio > div.portfolio-container > div.portfolio-img > div.portfolio-p > div.border > i.fas {
     font-size: 30px;
     color: darkgreen;
+}
+
+section#contact {
+    background-color: #213b50;
+    height: 400px;
+    padding: 20px;
+}
+
+section#contact > div.contact-container {
+    display: inline-block;
+    width: 100%;
+
+}
+
+section#contact > div.contact-container > div.contact-details {
+    width: 50%;
+    float: left;
+    color: white;
+}
+
+section#contact > div.contact-container > div#contact-details i.fab {
+    font-size: 60px;
+}
+
+input,
+textarea {
+    width: 50%;
+    color: #fff;
+    border: 1px solid #2b4a64;
+    padding: 5px;
+    background-color: #2b4a64;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #4e708c;
+    border: 1px solid #fff;
+}
+
+input[type="submit"] {
+    background-color: #1ac056;
+    text-align: center;
+    /*    text-transform: uppercase;*/
+    width: 20%;
+    padding: 15px 0;
 }
